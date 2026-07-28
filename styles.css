@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.left {
+  flex: 0 0 40%;
+  background-color: #1e1e24;
+  color: white;
+  text-align: center;
+}
+
+.right {
+  flex: 0 0 60%;
+  background-color: #F79D65;
+  text-align: center;
+
+}
