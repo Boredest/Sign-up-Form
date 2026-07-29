@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 .container {
   display: flex;
   justify-content: center;
@@ -13,14 +12,27 @@
 
 .left {
   flex: 0 0 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #1e1e24;
   color: white;
   text-align: center;
+  gap: 2.5rem;
+}
+
+.left-header {
+  align-self: flex-start;
+  padding: 1rem;
+}
+
+img {
+  max-width: calc(90%);
+  block-size: auto;
 }
 
 .right {
   flex: 0 0 60%;
-  background-color: #F79D65;
+  background-color: #f79d65;
   text-align: center;
-
 }
