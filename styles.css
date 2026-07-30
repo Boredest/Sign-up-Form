@@ -4,16 +4,25 @@
   box-sizing: border-box;
 }
 
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+
 .container {
   display: flex;
   justify-content: center;
   height: 100vh;
+  font-family: "Montserrat", sans-serif;
 }
 
 .left {
   flex: 0 0 40%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: #1e1e24;
   color: white;
@@ -33,6 +42,33 @@ img {
 
 .right {
   flex: 0 0 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: #f79d65;
-  text-align: center;
+  gap: 1rem;
 }
+
+.right-header {
+  color: white;
+}
+.form-body {
+  background-color: white;
+  padding: 1rem;
+ 
+
+}
+.form-row {
+  display: flex;
+  gap: 3rem;
+  
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+
