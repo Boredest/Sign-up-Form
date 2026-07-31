@@ -53,6 +53,13 @@ img {
 .right-header {
   color: white;
 }
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .form-body {
   background-color: white;
   padding: 1rem;
@@ -69,6 +76,12 @@ img {
   display: flex;
   flex-direction: column;
   flex: 1;
+}
+
+.form-btn{
+  padding: 0.5rem;
+  max-width: 200px;
+  border-radius: 4px;
 }
 
 
