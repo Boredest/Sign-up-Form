@@ -33,10 +33,11 @@ textarea {
 .left-header {
   align-self: flex-start;
   padding: 1rem;
+  text-align: left;
 }
 
 img {
-  max-width: calc(90%);
+  max-width: calc(85%);
   block-size: auto;
 }
 
@@ -52,36 +53,61 @@ img {
 
 .right-header {
   color: white;
+  letter-spacing: 0.06rem;
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
 .form-body {
-  background-color: white;
   padding: 1rem;
- 
 
 }
 .form-row {
   display: flex;
-  gap: 3rem;
-  
+  gap: 4rem;
 }
 
-.form-group{
+.form-group {
   display: flex;
   flex-direction: column;
-  flex: 1;
 }
 
-.form-btn{
-  padding: 0.5rem;
-  max-width: 200px;
-  border-radius: 4px;
+.form-btn {
+  padding: 10px 50px;
+  max-width: 250px;
+  border-radius: 5px;
+  color: white;
+  background-color: #1e1e24;
+  margin-bottom: 0.5rem;
+  border: 0;
+  outline: none;
+  letter-spacing: 0.06rem;
+  font-size: 1.1rem;
 }
 
+input {
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0.3rem;
+  border-radius: 3px;
+  width: 250px;
+  outline: none;
+  font-size: 1rem;
+  background-color: #F79D65;
+  border-bottom: 2px black solid;
+}
 
+label {
+  font-weight: bold;
+}
+
+.login {
+  font-weight: bold;
+}
