@@ -24,8 +24,8 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #1e1e24;
-  color: white;
+  background-color: #F79D65;
+  color: #F4F1EA;
   text-align: center;
   gap: 2.5rem;
 }
@@ -47,24 +47,27 @@ img {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: #f79d65;
+  background-color: #1e1e24;
   gap: 1rem;
 }
 
 .right-header {
-  color: white;
+  color: #F4F1EA;
   letter-spacing: 0.06rem;
+  font-size: 2.4rem;
 }
 
 form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+ 
 }
 
 .form-body {
-  padding: 1rem;
-
+display: flex;
+flex-direction: column;
+gap: 2rem;
 }
 .form-row {
   display: flex;
@@ -80,8 +83,8 @@ form {
   padding: 10px 50px;
   max-width: 250px;
   border-radius: 5px;
-  color: white;
-  background-color: #1e1e24;
+  color: #F4F1EA;
+  background-color: #F79D65;
   margin-bottom: 0.5rem;
   border: 0;
   outline: none;
@@ -100,14 +103,54 @@ input {
   width: 250px;
   outline: none;
   font-size: 1rem;
-  background-color: #F79D65;
-  border-bottom: 2px black solid;
+  background-color:#1e1e24;
+  border-bottom: 2px #1e1e24 solid;
+  
+}
+
+input:focus {
+  border: 1px solid #F79D65;
 }
 
 label {
   font-weight: bold;
+  color: #F4F1EA;
 }
 
 .login {
   font-weight: bold;
+  color: #F79D65;
+}
+
+.btn-text{
+  color: #F4F1EA;
+}
+
+
+/*
+Source - https://stackoverflow.com/a/2610741
+Posted by fuxia, modified by community. See post 'Timeline' for change history
+Retrieved 2026-08-08, License - CC BY-SA 4.0
+*/
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #8F8B8A;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #8F8B8A;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #8F8B8A;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #8F8B8A;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #8F8B8A;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:    #8F8B8A;
 }
