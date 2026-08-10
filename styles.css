@@ -11,15 +11,20 @@ textarea {
   font: inherit;
 }
 
+body{
+
+}
+
 .container {
   display: flex;
   justify-content: center;
   height: 100vh;
   font-family: "Montserrat", sans-serif;
+  flex-wrap: wrap;
 }
 
 .left {
-  flex: 0 0 40%;
+  flex: 1 0 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,8 +46,12 @@ img {
   block-size: auto;
 }
 
+.sign-up-text {
+  font-size: 1.2rem;
+}
+
 .right {
-  flex: 0 0 60%;
+  flex: 1 0 60%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -60,6 +69,7 @@ img {
 form {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
@@ -85,11 +95,14 @@ form {
   border-radius: 5px;
   color: #f4f1ea;
   background-color: #f79d65;
-  margin-bottom: 0.5rem;
   border: 0;
   outline: none;
   letter-spacing: 0.06rem;
   font-size: 1.1rem;
+}
+
+.btn-text{
+  margin-top: 0.5rem;
 }
 
 input {
@@ -100,7 +113,7 @@ input {
   appearance: none;
   padding: 0.3rem;
   border-radius: 3px;
-  width: 250px;
+  max-width: 250px;
   outline: none;
   font-size: 1rem;
   color: #f4f1ea;
@@ -173,4 +186,28 @@ Retrieved 2026-08-08, License - CC BY-SA 4.0
 ::placeholder {
   /* Most modern browsers support this now. */
   color: #8f8b8a;
+}
+
+@media (max-width: 768px) {
+
+
+  .right,
+  .left {
+    flex: 0 0 100%;
+    padding: 1rem;
+  }
+
+  .left-header {
+    align-self: center;
+    text-align: center;
+  }
+
+  form {
+    align-items: center;
+    text-align: center;
+  }
+
+  input{
+    text-align: center;
+  }
 }
