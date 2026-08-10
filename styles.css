@@ -111,7 +111,6 @@ input {
 
 input:focus {
   border: 1px solid #f79d65;
-
 }
 
 input:user-valid {
@@ -119,7 +118,13 @@ input:user-valid {
 }
 input:user-invalid {
   border: 1px solid red;
+}
 
+input:-webkit-autofill {
+  border: 1px solid f79d65;
+  -webkit-text-fill-color: #f4f1ea;
+  font-family: "Montserrat", sans-serif;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 label {
