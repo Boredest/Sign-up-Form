@@ -10,7 +10,7 @@ select,
 textarea {
   font: inherit;
 }
-body{
+body {
   background-color: #1e1e24;
 }
 
@@ -91,6 +91,7 @@ form {
 .form-btn {
   padding: 10px 50px;
   max-width: 250px;
+  cursor: pointer;
   border-radius: 5px;
   color: #f4f1ea;
   background-color: #f79d65;
@@ -100,12 +101,16 @@ form {
   font-size: 1.1rem;
 }
 
-.btn-text{
+button:hover {
+  opacity: 0.95;
+}
+
+.btn-text {
   margin-top: 0.5rem;
 }
 
 input {
-  border: none;
+  border: 1px solid transparent;
   -webkit-appearance: none;
   -ms-appearance: none;
   -moz-appearance: none;
@@ -188,13 +193,10 @@ Retrieved 2026-08-08, License - CC BY-SA 4.0
 }
 
 @media (max-width: 768px) {
-
-
   .right,
   .left {
     flex: 0 0 100%;
     padding: 1rem;
-   
   }
 
   .left-header {
@@ -207,13 +209,13 @@ Retrieved 2026-08-08, License - CC BY-SA 4.0
     text-align: center;
   }
 
-  .form-row{
+  .form-row {
     flex-direction: column;
     gap: 0.5rem;
     align-items: center;
   }
 
-  input{
+  input {
     text-align: center;
   }
 }
